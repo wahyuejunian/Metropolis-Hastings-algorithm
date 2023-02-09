@@ -83,24 +83,5 @@ legend ('Update Model','True Epicenter','Station','Initial Model','Final Model')
 axis equal;
 axis([xmin xmax ymin ymax]);
 
-
-% figure(2)
-% axis([xmin xmax ymin ymax]);
-% axis equal tight;
-% [X,Y]=meshgrid(x,y);
-% contourf(X,Y,griddata(xacc,yacc,eacc,X,Y))
-% hold on
-% plot(x0,y0,'*r','Linewidth',2,'MarkerSize',10)
-% plot(xsts,ysts,'v','MarkerSize',8,'MarkerFaceColor','k','MarkerEdgeColor','r')
-% plot(xacc(1),yacc(1),'s','color','k','MarkerSize',8,'MarkerFaceColor','#0000FF')
-% plot(xacc(end),yacc(end),'s','color','k','MarkerSize',8,'MarkerFaceColor','#FF0000')
-% title('Penentuan Epicenter Gempa MH Algoritm')
-% ylabel('y-location')
-% xlabel('x-location')
-% legend ('Kontur Misfit','True Epicenter','Station','Initial Model','Final Invertion')
-% colormap jet;
-% skala=colorbar;
-% title(skala,'Misfit','fontweight','bold','fontsize',10);
-% 
 fh.WindowState='maximize';
 print('-dpng','Epicenter MH Algoritm','-r500');
